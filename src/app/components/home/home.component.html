@@ -1,0 +1,41 @@
+    <!-- <div class="container"> -->
+<h2>Crear nuevo usuario:</h2>
+<form (ngSubmit)="createUser()" #userForm="ngForm">
+    <div class="form-group">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="firstName">Nombre:</label>
+        <input type="text" class="form-control" id="firstName" required [(ngModel)]="user.firstName" name="firstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Apellido:</label>
+        <input type="text" class="form-control" id="lastName" required [(ngModel)]="user.lastName" name="lastName">
+    </div>
+    <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="celPhone">Teléfono:</label>
+        <input type="tel" class="form-control" id="celPhone" required [(ngModel)]="user.celPhone" name="celPhone">
+    </div>
+    <div class="form-group">
+        <label for="gender">Género:</label>
+        <select class="form-control" id="gender" required [(ngModel)]="user.gender" name="gender">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="birthday">Fecha de nacimiento:</label>
+        <input type="date" class="form-control" id="birthday" [(ngModel)]="user.birthday" name="birthday">
+    </div>
+    <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear usuario</button>
+</form>
