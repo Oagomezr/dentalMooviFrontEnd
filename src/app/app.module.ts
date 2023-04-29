@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registro', component: SignUpComponent },
+  { path: 'signup', component: SignUpComponent },
   { path: 'admin', component: AdminComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
